@@ -1,0 +1,63 @@
+body {
+    margin: 0%;
+    background-color: #00040C;
+    height: 100vh;
+}
+.navBar {
+    background-color: #00040C;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid #010C1F;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.navBar img {
+    width: 70px;
+    padding-left: 2%;
+}
+.navBar h1 {
+    color: white;
+}
+.conteinerCadastro {
+    display: flex;
+    justify-content: space-between;
+}
+.colunaEsquerda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caixaCadastro {
+    background-color: #010C1F;
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+}
+.caixaCadastro input {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    width: 350px;
+    height: 30px;
+}
+.caixaCadastro h1 {
+    color: white;
+    font-size: 50px;
+}
+.caixaCadastro h2{
+    color: white;
+    font-size: 20px;
+}
+.caixaCadastro button {
+    border: none;
+    margin-top: 10px;
+
+}
+.colunaDireita img{
+    width: 100%;
+}
