@@ -1,0 +1,102 @@
+body{
+    margin: 0%;
+    font-family: "Oswald", sans-serif;
+    background-color: #F8FAFC;
+}
+.navBar {
+    height: 70px;
+    background: #0F172A;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.navBar img {
+    width: 50px;
+    margin-right: 15px;
+}
+.dadosPerfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.imgPerfil img {
+    width: 250px;
+    border-radius: 50%;
+}
+.nomeTime {
+    margin-left: 25px;
+}
+.nomeTime h1 {
+    font-size: 70px;
+    margin-top: 0%;
+    margin-bottom: 10px;
+}
+.nomeTime select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #F8FAFC;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/32/32195.png");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 10px;
+}
+.biografia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.biografia h1 {
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 0%;
+    margin-bottom: 10px;
+}
+.biografia textarea {
+    font-family: "Oswald", sans-serif;
+    width: 50%;
+    min-height: 150px;
+    max-height: 300px;
+    padding: 12px 15px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: black;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.areaFotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.areaFotos img {
+    width: 250px;
+}
+.areaFotos h1 {
+    font-size: 25px;
+    font-weight: 300;
+}
+.fotosPerfil {
+    display: flex;
+    gap: 30px;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    background: #010D24;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
