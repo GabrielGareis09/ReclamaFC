@@ -1,20 +1,27 @@
+/*Css body*/
 body{
     margin: 0%;
     overflow: hidden;
     font-family: "Oswald", sans-serif;
 }
+
+
+/*Css Navbar*/
 .navBar {
     height: 70px;
     background: #0F172A;
     color: white;
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 30px;
 }
 .navBar img {
     width: 50px;
     margin-right: 15px;
 }
+
+
+/*Css Login*/
 .conteinerLogin {
     background-color: #F8FAFC;
     background-image: url(/imagens/login.png);
@@ -63,4 +70,8 @@ body{
     color: white;
     font-size: 18px;
     cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.conteinerLogin button:hover {
+    background-color: #b46000;
 }

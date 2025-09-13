@@ -1,20 +1,74 @@
+/*Css body*/
 body{
     margin: 0%;
     font-family: "Oswald", sans-serif;
     background-color: #F8FAFC;
 }
-.navBar {
+
+
+/*Css Navbar*/
+.navbar {
     height: 70px;
     background: #0F172A;
     color: white;
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    justify-content: space-between;
+    padding: 0 40px;  
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-.navBar img {
-    width: 50px;
-    margin-right: 15px;
+.navbarLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
 }
+.navbarLeft img {
+        width: 50px;
+        border-radius: 50%;
+}
+.navbarLeft h1 {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: white;
+}
+.navbarRight {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+}
+.navbarRight a {
+        text-decoration: none;
+}
+.navbarRight a button {
+        padding: 10px 20px; 
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+}
+.btnReclamar {
+        background: #E11D48;
+        color: white;
+}
+.btnReclamar:hover {
+        background: #BE123C;
+        transform: translateY(-2px);
+}
+.btnPerfil {
+        background: #38BDF8;
+        color: white;
+}
+.btnPerfil:hover {
+        background: #0284C7;
+        transform: translateY(-2px);
+}
+
+
+/*Css Perfil, foto, nome e time*/
 .dadosPerfil {
     display: flex;
     justify-content: center;
@@ -48,6 +102,9 @@ body{
     background-position: right 12px center;
     background-size: 10px;
 }
+
+
+/*Css Biografia, textarea para escrever biografia*/
 .biografia {
     display: flex;
     flex-direction: column;
@@ -72,15 +129,22 @@ body{
     border: 1px solid #ccc;
     border-radius: 8px;
 }
+
+
+/*Css Perfil, local onde usuario adicione 3 fotos*/
 .areaFotos {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .areaFotos img {
     width: 250px;
+    transition: all 0.2s ease;
+}
+.areaFotos img:hover {
+    transform: scale(1.05);
 }
 .areaFotos h1 {
     font-size: 25px;
@@ -90,6 +154,9 @@ body{
     display: flex;
     gap: 30px;
 }
+
+
+/*Css Rodapé ReclamaFC*/
 .footer {
     width: 100%;
     height: 50px;
@@ -99,4 +166,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }

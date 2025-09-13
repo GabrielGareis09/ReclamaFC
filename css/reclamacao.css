@@ -1,0 +1,187 @@
+/*Css body*/
+body{
+  margin: 0%;
+  font-family: "Oswald", sans-serif;
+  background-color: #f4f6f9;
+}
+
+
+/*Css Navbar*/
+.navbar {
+  height: 70px;
+  background: #0F172A;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;  
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.navbarLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.navbarLeft img {
+  width: 50px;
+  border-radius: 50%;
+}
+.navbarLeft h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+}
+.navbarRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbarRight a {
+  text-decoration: none;
+}
+.navbarRight a button {
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btnReclamar {
+  background: #E11D48;
+  color: white;
+}
+.btnReclamar:hover {
+  background: #BE123C;
+  transform: translateY(-2px);
+}
+.btnPerfil {
+  background: #38BDF8;
+  color: white;
+}
+.btnPerfil:hover {
+  background: #0284C7;
+  transform: translateY(-2px);
+}
+
+
+/*Css Conteiner formulario*/
+.conteinerPai {
+  display: flex;
+  justify-content: center;
+}
+/*Css formulario*/
+.conteinerFormulario {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 5%;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+/*Css titulo formulario*/
+.topoFormulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topoFormulario img{
+  width: 70px;
+  margin-right: 10px;
+}
+.topoFormulario h1 {
+  color: black;
+}
+/*Css Formulario funções*/
+.conteinerFormulario h2 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 50px;
+}
+.conteinerFormulario input {
+  font-family: "Oswald", sans-serif;
+  padding: 10px 0px 10px 5px;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px;
+  font-size: 15px;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.conteinerFormulario select {
+  font-family: "Oswald", sans-serif;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding: 10px 0px 10px 5px;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/32/32195.png");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px;
+  margin-bottom: 10px;
+}
+.conteinerFormulario textarea {
+  font-family: "Oswald", sans-serif;
+  min-height: 150px;
+  max-height: 300px;
+  padding: 12px 15px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: black;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.conteinerFormulario button {
+  margin-top: 0px;
+  padding: 10px 0px 10px 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0077ff;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+}
+.conteinerFormulario button:hover {
+  background-color: #004da5;
+}
+.conteinerFormulario span {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+
+/*Css Rodapé ReclamaFC*/
+.footer {
+  width: 100%;
+  height: 50px;
+  background: #010D24;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
