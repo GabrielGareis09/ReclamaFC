@@ -1,194 +1,382 @@
+/*Css body*/
 body{
     margin: 0%;
     font-family: "Oswald", sans-serif;
     background-color: #F8FAFC;
 }
-.navBar {
+
+
+/*Css Navbar*/
+.navbar {
     height: 70px;
     background: #0F172A;
     color: white;
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    justify-content: space-between;
+    padding: 0 40px;  
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-.navBar img {
+.navbarLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+.navbarLeft img {
     width: 50px;
-    margin-right: 15px;
-    margin-top: 0%;
+    border-radius: 50%;
+}
+.navbarLeft h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: white;
+}
+.navbarRight {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+}
+.navbarRight a {
+        text-decoration: none;
+}
+.navbarRight a button {
+        padding: 10px 20px; 
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+}
+.btnReclamar {
+        background: #E11D48;
+        color: white;
+}
+.btnReclamar:hover {
+        background: #BE123C;
+        transform: translateY(-2px);
+}
+.btnPerfil {
+        background: #38BDF8;
+        color: white;
+}
+.btnPerfil:hover {
+        background: #0284C7;
+        transform: translateY(-2px);
+}
+
+
+/*Css Começo do site "Topo", bem-vindo ao site*/
+.conteinerTopo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    gap: 30px;
+}
+.colunaEsquerda img {
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #010D24;
+}
+.colunaDireita{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.conteudoDireita h3{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border: 1px solid gray; 
+    border-radius: 20px;
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+    text-align: center;
     margin-bottom: 0%;
 }
-.bemvindo {
+.conteudoDireita h1{
+    color: #0F172A;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 30px;
     text-align: center;
 }
-.bemvindo h1 {
-    font-size: 80px;
-    font-weight: 100;
-    margin-top: 20px;
-    margin-bottom: 40px;
+.conteudoDireita p{
+    color: black;
+    font-size: 27px;
+    font-weight: 300;
+    margin-top: 0%;
+    margin-bottom: 20px;
+    text-align: center;
 }
-.conteinerHome {
+.botao a {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease;
 }
-.colunaEsquerda {
-    width: 50%;
+.botao a:hover {
+    background-color: #004da5;
+    transform: translateY(-2px);
+}
+
+/*Css Meio/Fim do site, últimas reclamações e chamada com botão*/
+.conteinerMeio {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    background-color: #0F172A;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.caixaReclamacao {
+    background-color: white;
+    width: 550px;
+    padding: 5px 10px 15px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px black;
+}
+.tituloCaixa {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 20px;
+    text-align: center;
+}
+/*Css Reclamação Flamengo*/
+.recFla {
+    display: flex;
+    align-items: center;
+    background-color: rgb(73, 0, 0);
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px black;
+}
+.recFla img {
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+    margin-right: 7px;
+}
+.recFla h1 {
+    margin-top: 0%;
+    margin-bottom: 2px;
+    font-size: 25px;
+    color: white;
+}
+.recFla p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+}
+/*Css Reclamação Corinthians*/
+.recCor {
+    display: flex;
+    align-items: center;
+    background-color: rgb(24, 24, 24);
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px black;
+}
+.recCor img {
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+    margin-right: 7px;
+}
+.recCor h1 {
+    margin-top: 0%;
+    margin-bottom: 2px;
+    font-size: 25px;
+    color: white;
+}
+.recCor p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+}
+/*Css Reclamação Grêmio*/
+.recGre {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 183, 255);
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px black;
+}
+.recGre img {
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+    margin-right: 7px;
+}
+.recGre h1 {
+    margin-top: 0%;
+    margin-bottom: 2px;
+    font-size: 25px;
+    color: white;
+}
+.recGre p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+}
+/*Css Reclamação Mirassol*/
+.recMir {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 237, 74);
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px black;
+}
+.recMir img {
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+    margin-right: 7px;
+}
+.recMir h1 {
+    margin-top: 0%;
+    margin-bottom: 2px;
+    font-size: 25px;
+    color: black;
+}
+.recMir p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 18px;
+    color: black;
+    font-weight: 300;
+}
+/*Css Reclamação SãoPaulo*/
+.recSao {
+    display: flex;
+    align-items: center;
+    background-color: #df0514;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px black;
+}
+.recSao img {
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 0%;
+    margin-right: 7px;
+}
+.recSao h1 {
+    margin-top: 0%;
+    margin-bottom: 2px;
+    font-size: 25px;
+    color: white;
+}
+.recSao p {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 18px;
+    color: white;
+    font-weight: 300;
+}
+/*Css chamada para levar o usuario a reclamar*/
+.direitaMeio {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    justify-content: center;
 }
-.caixaReclamacao {
-    background-color: #e2e2e2;
+.direitaMeio img {
+    width: 130px;
+    border-radius: 50%;
+    border: 5px solid white;
+    z-index: 2;
+    margin-bottom: -70px;
+}
+.caixaVoz {
+    background-color: white;
+    padding: 20px 20px 40px 20px;
     border-radius: 10px;
-    padding: 10px 10px 10px 10px;
 }
-.titulo {
-    color: black;
+.caixaVoz h1 {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    color: white;
     font-size: 50px;
-    padding-left: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-weight: 200;
+    color: #0077ff;
 }
-.reclamacaoFlamengo {
-    background-color: #5f0010;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    height: 150px;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.reclamacaoFlamengo img {
-    width: 80px;
-    margin-right: 15px;
-}
-.reclamacaoFlamengo h1 {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    color: white;
-    font-size: 25px;
-}
-.reclamacaoFlamengo p {
-    margin-top: 0%;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    font-size: 19px;
-    font-weight: 200;
-    color: white;
-    line-height: 24spx;
-}
-
-.reclamacaoCorinthians {
-    background-color: black;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    height: 150px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-.reclamacaoCorinthians img {
-    width: 80px;
-    margin-right: 15px;
-}
-.reclamacaoCorinthians h1 {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    color: white;
-    font-size: 25px;
-}
-.reclamacaoCorinthians p {
-    margin-top: 0%;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    font-size: 19px;
-    font-weight: 200;
-    color: white;
-    line-height: 24spx;
-}
-
-.reclamacaoMirassol {
-    background-color: #FFD400;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    height: 150px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-.reclamacaoMirassol img {
-    width: 80px;
-    margin-right: 15px;
-}
-.reclamacaoMirassol h1 {
+.p1 {
+    font-family: Arial, Helvetica, sans-serif;
     margin-top: 0%;
     margin-bottom: 0%;
     color: black;
-    font-size: 25px;
-}   
-.reclamacaoMirassol p {
-    margin-top: 0%;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    font-size: 19px;
     font-weight: 200;
+    font-size: 35px;
+}
+.p2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0%;
+    margin-bottom: 0%;
     color: black;
-    line-height: 24spx;
-}
-
-.reclamacaoSaopaulo {
-    background-color: #E30613;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    height: 150px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-.reclamacaoSaopaulo img {
-    width: 80px;
-    margin-right: 15px;
-}
-.reclamacaoSaopaulo h1 {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    color: white;
+    font-weight: 400;
     font-size: 25px;
 }
-.reclamacaoSaopaulo p {
-    margin-top: 0%;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    font-size: 19px;
-    font-weight: 200;
+.caixaVoz button {
+    background-color: #0077ff;
     color: white;
-    line-height: 24spx;
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #0077ff;
+    transition: all 0.2s ease;
+}
+.caixaVoz button:hover {
+    background-color: #004da5;
+    box-shadow: 0 0 10px #004da5;
 }
 
-.reclamacaoGremio {
-    background-color: #29ABE2;
+
+/*Css Rodapé ReclamaFC*/
+.footer {
+    width: 100%;
+    height: 50px;
+    background: #010D24;
+    color: white;
     display: flex;
     align-items: center;
-    padding-left: 20px;
-    height: 150px;
-    border-radius: 10px;
-}
-.reclamacaoGremio img {
-    width: 80px;
-    margin-right: 15px;
-}
-.reclamacaoGremio h1 {
-    margin-top: 0%;
-    margin-bottom: 0%;
-    color: white;
-    font-size: 25px;
-}
-.reclamacaoGremio p {
-    margin-top: 0%;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    font-size: 19px;
-    font-weight: 200;
-    color: white;
-    line-height: 24spx;
+    justify-content: center;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
