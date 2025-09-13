@@ -10,16 +10,24 @@
     <title>Perfil - ReclamaFC</title>
 </head>
 <body>
-    <div class="navBar">
-        <img src="/imagens/logo.png" alt="logo_ReclamaFC">
-        <h1>Reclama FC</h1>
-    </div>
+    <nav class="navbar">
+        <a href="home.html" class="navbarLeft">
+            <img src="/imagens/logo.png" alt="Logo ReclamaFC">
+            <h1>ReclamaFC</h1>
+        </a>
+        <div class="navbarRight">
+            <a href="reclamacao.html"><button class="btnReclamar">Reclamar</button></a>
+            <a href="perfil.html"><button class="btnPerfil">Perfil</button></a>
+        </div>
+    </nav>
+
     <div class="dadosPerfil">
         <div class="imgPerfil">
-            <img src="/imagens/cadastro.png" alt="">
+            <img src="/imagens/perfilAvatar.png" alt="">
         </div>
+        
         <div class="nomeTime">
-            <h1>Gabriel Gareis</h1>
+            <h1>Nome_usuario</h1>
             <select required>
                 <option>Selecione seu time</option>
                 <option>Flamengo</option>
@@ -72,21 +80,23 @@
                 <option>Ypiranga-RS</option>
                 <option>Caxias</option>
             </select>
-
         </div>
     </div>
+    
     <div class="biografia">
         <h1>Biografia</h1>
         <textarea placeholder="Escreva um pouco sobre você!"></textarea>
     </div>
+
     <div class="areaFotos">
         <h1>Adicione suas fotos</h1>
         <div class="fotosPerfil">
-            <img src="/imagens/cadastro.png" alt="">
-            <img src="/imagens/cadastro.png" alt="">
-            <img src="/imagens/cadastro.png" alt="">
+            <img src="/imagens/perfilFoto.png" alt="">
+            <img src="/imagens/perfilFoto.png" alt="">
+            <img src="/imagens/perfilFoto.png" alt="">
         </div>
     </div>
+    
     <div class="footer">
         <p>© 2025 Reclama FC - Todos os direitos reservados</p>
     </div>

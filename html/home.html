@@ -10,73 +10,111 @@
     <title>Home - ReclamaFC</title>
 </head>
 <body>
-    <div class="navBar">
-        <img src="/imagens/logo.png" alt="logo_ReclamaFC">
-        <h1>Reclama FC</h1>
-    </div>
-    <div class="bemvindo">
-        <h1>Bem-vindo Gareis!</h1>
-    </div>
-    <div class="conteinerHome">
+    <nav class="navbar">
+        <a href="home.html" class="navbarLeft">
+            <img src="/imagens/logo.png" alt="Logo ReclamaFC">
+            <h1>ReclamaFC</h1>
+        </a>
+        <div class="navbarRight">
+            <a href="reclamacao.html"><button class="btnReclamar">Reclamar</button></a>
+            <a href="perfil.html"><button class="btnPerfil">Perfil</button></a>
+        </div>
+    </nav>
+    
+    <div class="conteinerTopo">
         <div class="colunaEsquerda">
+            <img src="/imagens/home.png " alt="">
+        </div>
+        
+        <div class="colunaDireita">
+            <div class="conteudoDireita">
+                <h3>Sua voz é o 12º jogador. Reclame, cobre e faça parte da mudança.</h3>
+                <h1>Bem-vindo ao ReclamaFC</h1>
+                <p>O Reclama FC é o espaço onde a voz do torcedor realmente faz diferença. Aqui você pode<br>
+                compartilhar suas críticas, opiniões e reclamações sobre o time que ama. Afinal, quem ama<br>
+                futebol sabe: torcer é paixão, mas também é cobrança!</p>
+            </div>
+            
+            <div class="botao">
+                <a href="reclamacao.html">Faça a sua Reclamação!</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="conteinerMeio">
+        <div class="esquerdaMeio">
             <div class="caixaReclamacao">
-                <h1 class="titulo">Últimas reclamações</h1>
-                <hr>
-                <div class="reclamacaoFlamengo">
+                <div class="tituloCaixa">
+                    <h1>Últimas Reclamações</h1>
+                    <hr>
+                </div>
+                
+                <div class="recFla">
                     <div>
                         <img src="/imagens/flamengo.png" alt="">
                     </div>
-                    <div>
+                    <div>   
                         <h1>Ayrton Nunes</h1>
-                        <p>O ingresso está cada vez mais caro e o torcedor comum não consegue acompanhar o time no<br>
-                            Maracanã. O clube precisa valorizar quem sempre apoiou. Futebol não pode virar só negócio.</p>
+                        <p>Time sem raça dentro de campo, precisamos de mais entrega e menos estrelismo.</p>
                     </div>
                 </div>
-                <div class="reclamacaoCorinthians">
+
+                <div class="recCor">
                     <div>
                         <img src="/imagens/corinthians.png" alt="">
                     </div>
-                    <div>
-                        <h1>Sabino Luz</h1>
-                        <p>O atendimento para quem é sócio-torcedor está péssimo, não consigo renovar meu plano online.<br>
-                            Já liguei várias vezes e não resolvem. O torcedor merece mais respeito.</p>
+                    <div>   
+                        <h1>Jandrei Santos</h1>
+                        <p>O ingresso tá muito caro, difícil apoiar o time no estádio desse jeito.</p>
                     </div>
                 </div>
-                <div class="reclamacaoMirassol">
-                    <div>
-                        <img src="/imagens/mirassol.png" alt="">
-                    </div>
-                    <div>
-                        <h1>Maria Luiza</h1>
-                        <p>A arquibancada está sem cobertura em dias de sol forte e chuva. O torcedor passa sufoco<br>
-                            para assistir ao jogo. O clube precisa investir mais em conforto no estádio.</p>
-                    </div>
-                </div>
-                <div class="reclamacaoSaopaulo">
-                    <div>
-                        <img src="/imagens/saopaulo.png" alt="">
-                    </div>
-                    <div>
-                        <h1>Jéssica Costa</h1>
-                        <p>O estádio continua com problemas de acesso e filas enormes para entrar. É uma vergonha<br>
-                            esperar mais de uma hora para assistir ao jogo. Precisam melhorar a organização.</p>
-                    </div>
-                </div>
-                <div class="reclamacaoGremio">
+
+                <div class="recGre">
                     <div>
                         <img src="/imagens/gremio.png" alt="">
                     </div>
-                    <div>
-                        <h1>Bruno Oliveira</h1>
-                        <p>A loja oficial está sem camisetas do time em vários tamanhos há semanas. Como o<br>
-                            torcedor vai apoiar se não encontra o produto? Falta de planejamento absurdo.</p>
+                    <div>   
+                        <h1>Jessica Almeida</h1>
+                        <p>Defesa falhando demais, parece que não treinam posicionamento.</p>
                     </div>
                 </div>
+
+                <div class="recMir">
+                    <div>
+                        <img src="/imagens/mirassol.png" alt="">
+                    </div>
+                    <div>   
+                        <h1>Eder Araujo</h1>
+                        <p>O estádio precisa de mais estrutura, falta conforto pro torcedor nos jogos.</p>
+                    </div>
+                </div>
+
+                <div class="recSao">
+                    <div>
+                        <img src="/imagens/saopaulo.png" alt="">
+                    </div>
+                    <div>   
+                        <h1>Maria Luiza</h1>
+                        <p>Precisamos de mais regularidade, o time joga bem um jogo e some no outro.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="colunaDireita">
-            
+        
+        <div class="direitaMeio">
+            <img src="/imagens/homeVoz.png" alt="">
+            <div class="caixaVoz">
+                <h1>Sua voz faz a diferença!</h1>
+                <p class="p1">Insatisfeito com seu time?</p>
+                <p class="p2">Ajude a melhorar o futebol brasileiro!</p>
+                <a href="reclamacao.html"><button>Fazer Reclamação</button></a>
+            </div>
         </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2025 Reclama FC - Todos os direitos reservados</p>
     </div>
 </body>
 </html>
